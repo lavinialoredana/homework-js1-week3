@@ -16,15 +16,29 @@ console.log(namesArray[0]); //"Jose"
 console.log(namesArray.length); //2
 */
 
-function find(cities, letter){
-	var counter = 0;
-	//your code here
-	return counter;
+function find(cities, letter) {
+  var sum = 0;
+  for (var i = 0; i < cities.length; i = i + 1) {
+	  if (cities[i].startsWith(letter)) {
+		sum = sum + 1;  
+		//console.log(sum);
+		//console.log(cities[i]);
+	  }
+  }
+  return sum;
 }
-
 
 const citiesArray = ["Amsterdam", "Athens", "Barcelona", "Madrid"];
 
+console.log("Number of cities with A = " + find(citiesArray, "A"));
+console.log("Number of cities with B = " + find(citiesArray, "B"));
 
-console.log("Number of cities with A = " + find(citiesArray, 'A'));
-console.log("Number of cities with B = " + find(citiesArray, 'B'));
+// LAV'S SOLUTION
+// function find(cities, letter){
+// 	for (var counter = 0; counter === cities.startsWith("A"); counter++){
+// 		if (cities.startsWith("A")>0) {
+
+// 		}
+// 		return counter;
+// 	}
+// }
