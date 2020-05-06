@@ -14,3 +14,23 @@ a significant percentage of programmer candidates. So if you solved it, your
 labor market value just went up.)
 */
 
+
+var i = 0;
+
+for ( var i= 0; i< 101; i=i+1) {
+    if ( i % 3 === 0){
+    console.log("Migra");
+    }
+   
+    else if ( i % 5 === 0) {
+        console.log("Code");
+    }
+
+    else if ( i % 3 === 0 && i % 5 === 0){
+        console.log("Migra Code");
+    }
+
+    else {
+        console.log(i);
+    }
+}

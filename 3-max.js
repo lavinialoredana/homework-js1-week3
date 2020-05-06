@@ -7,7 +7,7 @@ function max(numbers){
 //    console.log(Math.max.apply(null, numbers));
 var maxNumber = numbers[0];
 
-for ( var i = 0; i <numbers.length; i= i+1) {
+for ( var i = 0; i < numbers.length; i= i+1) {
     if (numbers[i] > maxNumber) {
         maxNumber = numbers[i] 
     }
